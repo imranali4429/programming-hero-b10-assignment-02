@@ -32,12 +32,20 @@ body {
 .secondary-color {
   color: #e6533c;
 }
+.btn {
+  font-size: 1.125rem;
+  font-weight: 600;
+  border: none;
+  padding: 15px 44px;
+  border-radius: 42px;
+}
 
 /* nav section */
 .navbar {
   display: flex;
   justify-content: space-between;
   margin: 53px 180px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .nav-items {
   display: flex;
@@ -64,6 +72,108 @@ body {
   line-height: 120%;
   text-align: center;
   padding: 5px 4px;
+}
+
+/*----------- get Ready section-------------- */
+.get-ready-container {
+  margin: 53px 180px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 87px;
+}
+.context {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 40px 0;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.context-title {
+  font-size: 4.875rem;
+  margin-bottom: 28px;
+}
+.button-container {
+  display: flex;
+  /* justify-content: start; */
+  gap: 14px;
+  margin: 28px 0;
+}
+.context-btn-1 a,
+.context-btn-2 a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
+.context-btn-1 {
+  background-color: #e6533c;
+}
+.context-btn-2 {
+  border: 1px solid #ffffff;
+  background-color: #111111;
+}
+.img-container img {
+  /* width: 100%;
+  height: 100%; */
+  /* max-width: 500px;
+  max-height: 500px; */
+  /* object-fit: cover; */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+/* small crad video tutorial */
+.vt-container {
+  max-width: 190px;
+  height: 88px;
+  margin: 0 auto;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  gap: 5px;
+}
+
+.vt-round {
+  width: 38px;
+  height: 38px;
+  background-color: #e6533c;
+  border-radius: 50%;
+}
+.vt-context {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 0 12px;
+  text-align: center;
+}
+.vt-number {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.vt-subcription {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgba(239, 237, 232, 0.65);
+}
+.img-container {
+  position: relative;
+  width: 100%;
+}
+/* position */
+.vt-container-1 {
+  position: absolute;
+  margin-left: -60px;
+  margin-top: -140px;
+}
+.vt-container-2 {
+  position: absolute;
+margin-left: 210px;
+margin-top: -380px;
 }
 
 /* small device */
@@ -101,8 +211,8 @@ body {
     margin: 0 auto;
     padding: 5px 5px;
   }
-   .nav-item {
-    font-size: 1.00rem;
+  .nav-item {
+    font-size: 1rem;
   }
 }
 /* large device */
