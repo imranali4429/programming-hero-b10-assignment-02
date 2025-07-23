@@ -18,7 +18,7 @@ body {
   color: rgba(255, 255, 255, 1);
 }
 .description-font {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -30,11 +30,11 @@ body {
   font-size: 1.125rem;
   font-weight: 600;
   border: none;
-  padding: 15px 44px;
+  padding: 15px 42px;
   border-radius: 42px;
 }
 
-/* nav section */
+/* ============nav section============= */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -68,6 +68,83 @@ body {
   padding: 5px 4px;
 }
 
+/* ----------Run extra miles section------------ */
+.run-container {
+  max-width: 869px;
+  display: grid;
+  margin: 53px 180px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 150px;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 18px;
+  background-color: #222222;
+}
+.run-description {
+  margin-bottom: 30px;
+  margin-top: 14px;
+}
+.run-button {
+  padding: 15px 55px;
+}
+img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+/*-------- Change your habit section */
+.change-your-habit-container {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 53px 180px;
+  max-width: 969px;
+  height: 100%;
+  padding: 10px;
+}
+.c-y-habit-context {
+  text-align: center;
+}
+.c-y-habit-discription {
+  margin-top: 12px;
+  margin-bottom: 54px;
+}
+.c-y-habit-img-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 35px;
+  align-items: center;
+  text-align: center;
+}
+.c-y-habit-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+ 
+  border-radius: 50%;
+  padding: 0px 20px;
+  text-align: center;
+}
+.c-y-habit-card {
+  text-align: center;
+
+}
+.c-y-habit-img-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 10px;
+}
+.c-y-habit-img-description {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+
 /*----------- get Ready section-------------- */
 .get-ready-container {
   margin: 53px 180px;
@@ -83,7 +160,6 @@ body {
   justify-content: center;
   text-align: left;
   padding: 40px 0;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .context-title {
   font-size: 4.875rem;
@@ -91,7 +167,6 @@ body {
 }
 .button-container {
   display: flex;
-  /* justify-content: start; */
   gap: 14px;
   margin: 28px 0;
 }
@@ -109,7 +184,6 @@ body {
 }
 .img-container img {
   width: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
 }
 
@@ -121,11 +195,16 @@ body {
   border-radius: 12px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 8px 10px;
-  background-color: rgba(255, 255, 255, 0.1);
+  /* justify-content: center; */
   gap: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  
+}
+.get-ready-container{
+  /* border: 1px solid blue; */
+}
+.context{
+  /* border: 1px solid tomato; */
 }
 
 .vt-round {
@@ -138,21 +217,29 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  padding: 0 12px;
+  padding: 015px 30px;
   text-align: center;
+  justify-content: center;
 }
 .vt-number {
   font-size: 1.5rem;
   font-weight: 900;
 }
 .vt-subcription {
-  font-size: 0.875rem;
+  font-size: 0.700rem;
   font-weight: 400;
   color: rgba(239, 237, 232, 0.65);
 }
 .img-container {
   position: relative;
   width: 100%;
+  margin-right: 50px;
+  margin-top: 0px;
+  font-display: auto;
+}
+.img-container img{
+  margin-right: 100px;
+  /* border: 1px solid red */
 }
 /* position */
 .vt-container-1 {
@@ -162,9 +249,10 @@ body {
 }
 .vt-container-2 {
   position: absolute;
-  margin-right: -60px;
-  margin-left: 220px;
-  margin-top: 120px;
+  margin-left:200px ;
+  margin-top: -400px;
+  padding: 5px;
+ 
 }
 
 /* --------------BMI------- */
@@ -173,14 +261,12 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 20px 180px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   background-color: rgba(34, 34, 34, 1);
 }
 .container1 {
   display: flex;
   gap: 120px;
   color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* BMI Chart Styles */
@@ -199,13 +285,11 @@ body {
   width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .bmi-chart th,
 .bmi-chart td {
   width: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 12px;
   color: rgba(255, 255, 255, 0.5);
   font-size: 14;
@@ -246,7 +330,6 @@ form {
   padding: 12px;
   color: #ffffff;
   box-shadow: none;
-  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Submit Button */
@@ -272,7 +355,6 @@ team-container {
   justify-content: center;
   margin: 0 auto;
   padding: 20px 180px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   background-color: rgba(34, 34, 34, 1);
 }
 .team-img-container {
@@ -283,7 +365,6 @@ team-container {
 
   padding: 20px;
   border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.1);
 }
 .team-container h2 {
   text-align: center;
@@ -305,7 +386,77 @@ team-container {
   height: 100%;
   border-radius: 20px;
   object-fit: cover;
-  /* border: 1px solid rgba(255, 255, 255, 0.1); */
+}
+
+/* -----------------footer section ------- */
+.footer {
+  background-color: rgba(34, 34, 34, 1);
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* column-gap: 20px; */
+  padding: 55px 180px;
+  gap: 50px;
+}
+
+.f-fintness {
+  margin-bottom: 70px;
+  width: 420px;
+  margin: 0 auto;
+}
+.f-title {
+  font-weight: 900;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 5rem;
+  color: rgba(230, 83, 60, 1);
+}
+
+.get-start-container-1,
+.get-start-container-2 {
+  /* padding-left: 10px; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.get-start-container-1,
+.get-start-container-2,
+li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+.get-start-container-1,
+.get-start-container-2,
+a {
+  text-decoration: none;
+}
+
+.get-start-title {
+  font-size: 1.85rem;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 120%;
+}
+.get-start-container-1 a,
+.get-start-container-2 a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.25rem;
+}
+
+/* horizontal line */
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  padding-top: 33px;
+  padding-bottom: 33px;
 }
 
 /* =----------------small device ---------------*/
@@ -317,6 +468,7 @@ team-container {
   }
   .navbar {
     gap: 30px;
+    margin: 20px 20px;
   }
   .nav-items {
     gap: 20px;
@@ -325,6 +477,34 @@ team-container {
   }
   .nav-item {
     font-size: 1rem;
+  }
+  /* ------change your habits  */
+  .c-y-habit-img-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 15px;
+  }
+  .change-your-habit-container {
+    margin: 50px 20px;
+    padding: 50px;
+  }
+
+  /* run section */
+  .run-container {
+    margin: 50px 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    align-items: center;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .run-title {
+    font-size: 2.2rem;
+    line-height: 120%;
   }
   /* ------------get ready section */
   .get-ready-container {
@@ -367,7 +547,6 @@ team-container {
     gap: 30px;
   }
   .bmi-chart {
-    /* padding-right: 20px; */
     flex: 1 1 100%;
     margin-bottom: 0;
   }
@@ -376,10 +555,30 @@ team-container {
     margin-bottom: 10px;
   }
   /* meet our team  */
+
   .team-img-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     margin: 0 auto;
+  }
+
+  /* footer section */
+
+  .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+  .f-title {
+    margin-bottom: 10px;
+  }
+  .f-fintness {
+    margin-bottom: 40px;
+  }
+  .get-start-title {
+    font-size: 1.5rem;
   }
 }
 
@@ -402,6 +601,29 @@ team-container {
   .nav-item {
     font-size: 1rem;
   }
+  /* run section */
+  .run-container {
+    margin: 50px 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    align-items: center;
+    padding: 50px 20px;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .run-title {
+    font-size: 2.5rem;
+  }
+  .run-description {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  /* get Ready section */
   .get-ready-container {
     flex-direction: column;
     width: 100%;
@@ -435,14 +657,34 @@ team-container {
   .container {
     padding: 10px 10px;
   }
-    .bmi-form {
+  .bmi-form {
     flex: 1 1 100%;
     margin-bottom: 10px;
   }
-    .bmi-chart {
+  .bmi-chart {
     /* padding-right: 20px; */
     flex: 1 1 100%;
     margin-bottom: 0;
   }
+  /* footer section */
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    grid-template-rows: auto auto; /* Two rows */
+    gap: 30px;
+    text-align: left;
+    margin: auto;
+    margin-top: 10px;
+    padding: 50px;
+  }
+  .f-fintness {
+    grid-column: 1 / span2;
+    text-align: center;
+  }
+  .get-start-container-1 {
+    grid-column: 1 / span 1;
+  }
+  .get-start-container-2 {
+    grid-column: 2 / span 1;
+  }
 }
-/* large device */
