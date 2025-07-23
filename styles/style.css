@@ -125,7 +125,6 @@ img {
   height: 100%;
   border-radius: 20px;
   object-fit: cover;
-
   border-radius: 50%;
   padding: 0px 20px;
   text-align: center;
@@ -148,7 +147,6 @@ img {
 /*----------- get Ready section-------------- */
 .get-ready-container {
   margin: 53px 180px;
-
   display: flex;
   align-items: center;
   gap: 87px;
@@ -226,13 +224,11 @@ img {
 .img-container {
   position: relative;
   width: 100%;
-  margin-right: 50px;
+  /* margin-right: 50px; */
   margin-top: 0px;
   font-display: auto;
 }
-.img-container img {
-  margin-right: 100px;
-}
+
 /* position */
 .vt-container-1 {
   position: absolute;
@@ -396,8 +392,9 @@ team-container {
 
 .f-fintness {
   margin-bottom: 70px;
-  width: 420px;
+  width: 100%;
   margin: 0 auto;
+  text-align: left;
 }
 .f-title {
   font-weight: 900;
@@ -560,14 +557,22 @@ hr {
 
   .footer-container {
     grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
+    padding: 20px 20px;
+    /* gap: 50px;
+    margin-left: 20px; */
+  }
+  .footer-description {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    /* margin: 30px; */
   }
   .f-title {
-    margin-bottom: 10px;
-  }
+
+  margin-bottom: 20px;
+  font-size: 3rem;
+
+}
   .f-fintness {
     margin-bottom: 40px;
   }
