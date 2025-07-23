@@ -39,18 +39,20 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 53px 180px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 .nav-items {
   display: flex;
   align-items: center;
   gap: 44px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 5px 4px;
   border-radius: 35px;
 }
 .nav-items > li {
   list-style: none;
+}
+.nav-item-home {
+  background-color: #e6533c;
+  border-radius: 46px;
 }
 
 .nav-name {
@@ -59,13 +61,13 @@ body {
   color: #e6533c;
 }
 .nav-item {
-  font-size: 1.12rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: #ffffff;
   text-decoration: none;
   line-height: 120%;
   text-align: center;
-  padding: 5px 4px;
+  padding: 10px 15px;
 }
 
 /* ----------Run extra miles section------------ */
@@ -77,7 +79,7 @@ body {
   grid-template-rows: auto;
   gap: 150px;
   align-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+
   padding: 25px;
   border-radius: 18px;
   background-color: #222222;
@@ -98,7 +100,6 @@ img {
 
 /*-------- Change your habit section */
 .change-your-habit-container {
-  border: 1px solid rgba(255, 255, 255, 0.1);
   margin: 53px 180px;
   max-width: 969px;
   height: 100%;
@@ -124,14 +125,13 @@ img {
   height: 100%;
   border-radius: 20px;
   object-fit: cover;
- 
+
   border-radius: 50%;
   padding: 0px 20px;
   text-align: center;
 }
 .c-y-habit-card {
   text-align: center;
-
 }
 .c-y-habit-img-title {
   font-size: 1.125rem;
@@ -148,7 +148,7 @@ img {
 /*----------- get Ready section-------------- */
 .get-ready-container {
   margin: 53px 180px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+
   display: flex;
   align-items: center;
   gap: 87px;
@@ -198,13 +198,6 @@ img {
   /* justify-content: center; */
   gap: 5px;
   background-color: rgba(255, 255, 255, 0.1);
-  
-}
-.get-ready-container{
-  /* border: 1px solid blue; */
-}
-.context{
-  /* border: 1px solid tomato; */
 }
 
 .vt-round {
@@ -226,7 +219,7 @@ img {
   font-weight: 900;
 }
 .vt-subcription {
-  font-size: 0.700rem;
+  font-size: 0.7rem;
   font-weight: 400;
   color: rgba(239, 237, 232, 0.65);
 }
@@ -237,22 +230,21 @@ img {
   margin-top: 0px;
   font-display: auto;
 }
-.img-container img{
+.img-container img {
   margin-right: 100px;
-  /* border: 1px solid red */
 }
 /* position */
 .vt-container-1 {
   position: absolute;
   margin-left: -60px;
   margin-top: -140px;
+  padding-left: 10px;
 }
 .vt-container-2 {
   position: absolute;
-  margin-left:200px ;
+  margin-left: 200px;
   margin-top: -400px;
-  padding: 5px;
- 
+  padding: 05px;
 }
 
 /* --------------BMI------- */
@@ -285,6 +277,7 @@ img {
   width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .bmi-chart th,
@@ -294,6 +287,7 @@ img {
   color: rgba(255, 255, 255, 0.5);
   font-size: 14;
   font: 400;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* BMI Form Styles */
@@ -586,7 +580,6 @@ hr {
 @media screen and (min-width: 576px) and (max-width: 990px) {
   .navbar,
   .nav-items {
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
   }
@@ -600,6 +593,20 @@ hr {
   }
   .nav-item {
     font-size: 1rem;
+  }
+  /* change your habit section */
+  .c-y-habit-img-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+  .change-your-habit-container {
+    margin: 20px 20px;
+    max-width: 969px;
+    height: 100%;
+    padding: 10px;
   }
   /* run section */
   .run-container {
@@ -662,7 +669,6 @@ hr {
     margin-bottom: 10px;
   }
   .bmi-chart {
-    /* padding-right: 20px; */
     flex: 1 1 100%;
     margin-bottom: 0;
   }
